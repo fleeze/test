@@ -1,0 +1,6 @@
+{
+  "uri": "http://suggest.taobao.com/sug?code\u003dutf-8\u0026q\u003dapple\u0026callback\u003dcb",
+  "method": "GET",
+  "body": "",
+  "headers": {}
+}

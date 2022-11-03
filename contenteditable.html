@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #editor{
+            height: 60px;
+            width: 200px;
+            line-height: normal;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<div contenteditable="true" id="editor">Please type something in@ here, not in the textarea below<span contenteditable="false">sds</span> </div>
+
+</body>
+<script>
+    document.getElementById("editor").addEventListener("input", function(e) {
+        console.log(e.data)
+        if (e.data === '@') {
+            handleInputAt()
+        }
+        // document.getElementById("editor").innerHTML += '<span>?</span>'
+    }, false);
+    function handleInputAt() {
+        console.log('get')
+        const selection = window.getSelection()
+        console.log('selection', selection)
+    }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: flex">
+    <textarea id="text"></textarea>
+    <button onclick="startParse()">转换</button>
+    <div id="res"></div>
+</div>
+<script>
+    const textArea = document.getElementById('text')
+    const res = document.getElementById('res')
+    function startParse() {
+        const resObj = JSON.parse(textArea.value)
+        res.innerHTML = `<code>${resObj}</code>`
+    }
+</script>
+</body>
+</html>

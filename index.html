@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            src: url(./font/new.woff) format('woff');
+            font-weight: 400;
+            font-family: customFont;
+        }
+        #app{
+            display: block;
+            font-family: customFont;
+        }
+        #app::after{
+            content: '\0001';
+        }
+    </style>
+</head>
+<!--<script src="ws.js"></script>-->
+<body>
+<div>
+    <div id="app">发起请求 &nbsp;&#0001;1</div>
+</div>
+<script>
+    // document.getElementById('app').innerText = String('\u0001')
+</script>
+</body>
+</html>
