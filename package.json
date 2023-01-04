@@ -6,7 +6,8 @@
   "dependencies": {
     "http-server": "^14.1.1",
     "lodash": "^4.17.21",
-    "the-js-sdk-text": "^1.0.0"
+    "the-js-sdk-text": "^1.0.0",
+    "yapi-to-typescript": "^3.36.0"
   },
   "devDependencies": {},
   "scripts": {
